@@ -6,6 +6,8 @@
   "scripts": {
     "start:day1a": "tsx src/day1/day1a.ts",
     "start:day1b": "tsx src/day1/day1b.ts",
+    "start:dayNa": "tsx src/dayN/dayNa.ts",
+    "start:dayNb": "tsx src/dayN/dayNb.ts",
     "test": "jest"
   },
   "keywords": [],
