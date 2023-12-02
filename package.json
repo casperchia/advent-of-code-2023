@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:day1": "tsx src/day1/day1.ts",
+    "start:day1a": "tsx src/day1/day1a.ts",
+    "start:day1b": "tsx src/day1/day1b.ts",
     "test": "jest"
   },
   "keywords": [],

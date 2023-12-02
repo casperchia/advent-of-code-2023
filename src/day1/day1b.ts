@@ -1,16 +1,5 @@
 import { day1Input } from "./day1.input";
-
-export const getNumber = (input: string): number => {
-  const numbers = input?.split("").filter((char) => !isNaN(Number(char)));
-  const numberString = [...numbers].shift() + [...numbers].pop();
-  return Number(numberString);
-};
-
-export const getSum = (input: string[]): number => {
-  return input.reduce((sum, line) => sum + getNumber(line), 0);
-};
-
-console.log(`Part 1: ${getSum(day1Input)}`);
+import { getSum } from "./day1a";
 
 // Initial solution which was wrong - this does not allow for re-use of characters
 // e.g., "eightwo" would return "8wo" instead of "82"
@@ -63,5 +52,7 @@ export const lettersToNumbers = (input: string): string => {
   return output;
 };
 
-const part2Input = day1Input.map(lettersToNumbers);
-console.log(`Part 2: ${getSum(part2Input)}`);
+export const solve = () => {
+  const part2Input = day1Input.map(lettersToNumbers);
+  return getSum(part2Input);
+};
