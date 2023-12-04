@@ -8,6 +8,8 @@
     "start:day1b": "tsx src/day1/day1b.ts",
     "start:day2a": "tsx src/day2/day2a.ts",
     "start:day2b": "tsx src/day2/day2b.ts",
+    "start:day3a": "tsx src/day3/day3a.ts",
+    "start:day3b": "tsx src/day3/day3b.ts",
     "start:dayNa": "tsx src/dayN/dayNa.ts",
     "start:dayNb": "tsx src/dayN/dayNb.ts",
     "test": "jest"
