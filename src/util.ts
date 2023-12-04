@@ -5,5 +5,5 @@ export function readInput(filepath: string): string {
 }
 
 export function isNumber(input: string): boolean {
-  return !isNaN(Number(input));
+  return input.trim() !== "" && !isNaN(Number(input));
 }
