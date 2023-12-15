@@ -12,6 +12,18 @@ export function transpose<T>(matrix: T[][]) {
   return matrix[0].map((col, i) => matrix.map((row) => row[i]));
 }
 
+export function rotateClockwise<T>(matrix: T[][]) {
+  return matrix[0].map((val, index) =>
+    matrix.map((row) => row[index]).reverse(),
+  );
+}
+
+export function rotateCounterClockwise<T>(matrix: T[][]) {
+  return matrix[0].map((val, index) =>
+    matrix.map((row) => row[row.length - 1 - index]),
+  );
+}
+
 export function getPairCombinations<T>(values: T[]): [T, T][] {
   const combinations: [T, T][] = [];
   values.forEach((v1, i) => {
